@@ -1,8 +1,22 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+code, pre {
+  margin: 0;
 }
 
-a {
-  color: #00B7FF;
+code {
+  line-height: 1.6em;
+}
+
+pre.hover {
+  background-color: #ddd;
+}
+
+div.comment, div.comment input {
+  color: #aaa;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0.3rem;
+}
+
+div.comment input {
+  width: 60%;
 }

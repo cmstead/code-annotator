@@ -1,0 +1,19 @@
+// Fully qualified FizzBuzz, because why not?
+
+function fizzbuzz(value) {
+    if(typeof value !== 'number') {
+        throw new Error(`Cannot evaulate a value of type ${typeof value}`);
+    } else if (value !== Math.floor(value) || value <= 0) {
+        throw new Error('Values must be positive integers');
+    }
+
+    if(value % 15 === 0) {
+        return 'FizzBuzz';
+    } else if(value % 5 === 0) {
+        return 'Buzz';
+    } else if(value % 3 === 0) {
+        return 'Fizz';
+    } else {
+        return value.toString();
+    }
+}
